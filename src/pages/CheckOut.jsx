@@ -57,7 +57,8 @@ function CheckOut() {
       localStorage.removeItem("cart");
       window.dispatchEvent(new Event("cartUpdated"));
 
-      navigate("/order-success", { state: { orderId: response.data._id } });
+    //   navigate("/order-success", { state: { orderId: response.data._id } });
+    alert("Order placed successfully");
     } catch (err) {
       console.error("Order submission failed:", err);
       setError(

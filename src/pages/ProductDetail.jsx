@@ -113,7 +113,7 @@ function ProductDetail() {
                   }`}
                 >
                   <img
-                    src={`${import.meta.env.VITE_API_URL}/${img}`}
+                    src={`https://localbran-backend.onrender.com/${img}`}
                     alt={`${product.name} - ${index + 1}`}
                     className="w-full h-20 object-cover"
                   />

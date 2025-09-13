@@ -8,7 +8,7 @@ function Navbar() {
   const [cartCount, setCartCount] = useState(0);
   const navItems = [
     { name: "Home", link: "/" },
-    { name: "My Order", link: "/order-success" },
+    // { name: "My Order", link: "/order-success" },
   ];
 
   React.useEffect(() => {
