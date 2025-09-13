@@ -74,7 +74,7 @@ function Home() {
             className="border-1 border-gray-300 p-4 cursor-pointer"
           >
             <img
-              src={"http://localhost:3000/" + product.images[0]}
+              src={`${import.meta.env.VITE_API_URL}/${product.images[0]}`}
               alt={product.name}
               className="w-sm h-64 object-contain"
             />

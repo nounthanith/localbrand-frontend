@@ -163,7 +163,7 @@ function OrderSuccess() {
                         <div className="flex items-start">
                           {item.product.images && item.product.images[0] && (
                             <img
-                              src={`http://localhost:3000/${item.product.images[0]}`}
+                              src={`${import.meta.env.VITE_API_URL}${item.product.images[0]}`}
                               alt={item.product.name}
                               className="w-20 h-20 object-cover rounded-md"
                             />

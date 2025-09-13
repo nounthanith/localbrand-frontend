@@ -93,7 +93,7 @@ function ProductDetail() {
           <div className="space-y-4">
             <div className="bg-white rounded-lg overflow-hidden border p-4">
               <img
-                src={`http://localhost:3000/${
+                src={`${import.meta.env.VITE_API_URL}/${
                   product.images?.[selectedImage] || product.images?.[0]
                 }`}
                 alt={product.name}
@@ -113,7 +113,7 @@ function ProductDetail() {
                   }`}
                 >
                   <img
-                    src={`http://localhost:3000/${img}`}
+                    src={`${import.meta.env.VITE_API_URL}/${img}`}
                     alt={`${product.name} - ${index + 1}`}
                     className="w-full h-20 object-cover"
                   />
